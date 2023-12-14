@@ -32,6 +32,7 @@ const styles = {
   section: {
     flex: 1,
     margin: '0 10px',
+    color: '#fff',
   },
 };
 
