@@ -1,27 +1,77 @@
-import './Login.css';
+import React, { useState } from 'react';
+ import './Login.css';
 
-function Login() {
+
+const Login = () => {
+  const [studentId, setStudentId] = useState('');
+  const [pin, setPin] = useState('');
+  const [isAuthenticated, setAuthenticated] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    if (studentId === 'yourStudentId' && pin === 'yourPin') {
+      setAuthenticated(true);
+    } else {
+    
+      console.log('Authentication failed');
+    }
+  };
+
+  const handleGoogleSignIn = () => {
+    console.log('Signing in with Google...');
+    setAuthenticated(true);
+  };
+
   return (
-    <div className='Logiform'>
-      <form className="row g-3">
-        <div className="col-md-4">
-          <label htmlFor="validationServer01" className="form-label">Student ID</label><br></br>
-          <input type="text" className="form-control is-valid" id="validationServer01" value="" required />
-          <div className="valid-feedback">
-          </div>
+    <div>
+      <h2>Login Form</h2>
+      {!isAuthenticated ? (
+        <form onSubmit={handleSubmit}>
+          <label>
+            Student ID:
+            <input
+              type="text"
+              value={studentId}
+              onChange={(e) => setStudentId(e.target.value)}
+              required
+            />
+          </label>
+          <br />
+          <label>
+            PIN:
+            <input
+              type="password"
+              value={pin}
+              onChange={(e) => setPin(e.target.value)}
+              required
+            />
+          </label>
+          <br />
+          <button type="submit">Login</button>
+        </form>
+      ) : (
+        <div>
+          <p>You are already authenticated!</p>
         </div>
-        <div className="col-md-4">
-          <label htmlFor="validationServer02" className="form-label">PIN</label><br></br>
-          <input type="text" className="form-control is-valid" id="validationServer02" value="" required />
-          <div className="valid-feedback">
-          </div>
+      )}
+
+      {isAuthenticated && (
+        <div>
+          <p>Login successful!</p>
+          {}
         </div>
-        <div className="col-12">
-          <button className="btn btn-primary" type="submit">Log In</button>
+      )}
+
+      {!isAuthenticated && (
+        <div>
+          <p>Or sign in with Google:</p>
+          <button onClick={handleGoogleSignIn}>Sign in with Google</button>
         </div>
-      </form>
+      )}
     </div>
   );
-}
+};
+
 
 export default Login;

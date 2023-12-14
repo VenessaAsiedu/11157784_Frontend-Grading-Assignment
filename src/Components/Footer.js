@@ -16,16 +16,18 @@ const Footer = () => (
 
 const styles = {
   footer: {
-    backgroundColor: '#333',
+    backgroundColor: '#1b2430',
     color: '#fff',
     textAlign: 'center',
     padding: '10px',
     position: 'fixed',
     bottom: 0,
+    left: 0, 
     width: '100%',
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
+    zIndex: 1000,
   },
   section: {
     flex: 1,
@@ -33,10 +35,10 @@ const styles = {
   },
 };
 
-// Responsive styles
+
 styles.footer['@media (max-width: 768px)'] = {
   flexDirection: 'column',
-  position: 'fixed', // Keep position fixed for small screens
+  position: 'fixed', 
 };
 
 export default Footer;
