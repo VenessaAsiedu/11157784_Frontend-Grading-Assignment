@@ -1,0 +1,75 @@
+
+.instructor-contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; 
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  .instructor-list {
+    margin-top: 20px;
+  }
+  
+  .instructor-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .instructor-item {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .instructor-item.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .email-form {
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.instructor-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .instructor-email {
+    color: #666;
+  }
+  
