@@ -9,14 +9,13 @@ const InstructorContact = () => {
   const [isEmailSent, setEmailSent] = useState(false);
 
   const instructors = [
-    { id: 1, name: 'Micheal Soli', email: 'michealsoli@example.com' },
-    { id: 2, name: 'Adulahi Aziz', email: 'adulahiaziz@example.com' },
-    { id: 3, name: 'John Doe', email: 'johndoe@example.com' },
-    { id: 4, name: 'Jane Smith', email: 'janesmith@example.com' },
-    { id: 5, name: 'Alice Johnson', email: 'alicejohnson@example.com' },
-    { id: 6, name: 'Bob Thompson', email: 'bobthompson@example.com' },
-    { id: 7, name: 'Eva Davis', email: 'evadavis@example.com' },
-    { id: 8, name: 'Samuel Brown', email: 'samuelbrown@example.com' },
+    { id: 1, name: 'Micheal Soli DCIT205', email: 'michealsoli@gmail.com' },
+    { id: 2, name: 'Addulahi Aziz DCIT203', email: 'adulahiaziz@gmail.com' },
+    { id: 3, name: 'P. Boakye-Sekyerehene CBAS210', email: 'PBS@gmail.com' },
+    { id: 4, name: 'Mr. Paul Ammah DCIT201', email: 'paulAmmah@gmail.com' },
+    { id: 5, name: 'DCOP Samuel Winful DCIT207', email: 'winful@gmail.com' },
+    { id: 6, name: 'Benjamin Ghansah DCIT209', email: 'benjamin@gmail.com' },
+   
   ];
 
   const handleInstructorSelect = (instructor) => {
