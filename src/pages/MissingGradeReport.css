@@ -1,14 +1,14 @@
 
 .missing-grade-report-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 300px;
+    margin:  auto;
+    padding: 10px;
     background-color: #fff; 
   }
   
   h2 {
-    color: #333;
-  }
+    color: #bdb4b4;
+    }
   
   form {
     margin-top: 20px;

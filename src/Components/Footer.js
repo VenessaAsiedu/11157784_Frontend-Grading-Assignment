@@ -14,7 +14,7 @@ const Footer = () => (
   
   const styles = {
     footer: {
-      backgroundColor: '#1b2430',
+      backgroundColor: 'black',
       color: '#fff',
       textAlign: 'center',
       padding: '10px',
@@ -30,7 +30,7 @@ const Footer = () => (
     section: {
       flex: 1,
       margin: '0 10px',
-      color: '#fff',
+      color: '#fffff',
     },
   };
   

@@ -38,7 +38,7 @@ const InstructorContact = () => {
   return (
     <div className="instructor-contact-container">
       <h2>Instructor Contact</h2>
-
+      <p>Click on the right name  to send a message to the your instructor. </p>
       <div className="instructor-list">
         <h3>Instructors</h3>
         <div className="instructor-items">
