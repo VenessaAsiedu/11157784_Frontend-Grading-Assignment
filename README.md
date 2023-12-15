@@ -31,8 +31,8 @@ npm start
 
 This will start the application on `localhost` at the default port.
 
-Describe.
-Students will use this website to check theit grade and 
+Describtion
+Students will use this website to check their grade and report to their intructors if a grade hasnt been recorded or isnt reflecting.
 
 
 
